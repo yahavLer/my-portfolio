@@ -19,6 +19,8 @@ export type ExperienceItem = {
   company: string;
   role: string;
   bullets: string[];
+  logo?: string;
+  logos?: string[];
 };
 
 export type SkillGroup = {
@@ -100,6 +102,7 @@ export const experience: ExperienceItem[] = [
     period: "2024 – Present",
     company: "Defense Company",
     role: "NOC (Network Operations Center) Representative",
+    logo: "/images/logos/mod.png",
     bullets: [
       "Monitor mission-critical production systems and handle Tier 1.5 incidents in real time.",
       "Work daily with monitoring, logging, and infrastructure tools (Kibana, Grafana, ArgoCD, OpenShift, vSphere, NetApp).",
@@ -110,6 +113,7 @@ export const experience: ExperienceItem[] = [
     period: "2019 – 2021",
     company: "IDF – Tel Hashomer Induction Center",
     role: "Network Administrator & Team Leader",
+    logos: ["/images/logos/idf.png", "/images/logos/meitav.png", "/images/logos/tikshuv.png"],
     bullets: [
       "Led a team of 10 network administrator soldiers, supporting ~350 users.",
       "Owned user management, permissions, and troubleshooting of network/communication systems.",
@@ -124,6 +128,7 @@ export const education = [
     school: "Afeka College of Engineering, Tel Aviv",
     degree: "B.Sc. in Software Engineering",
     extra: "Specialization in Mobile Applications",
+    logo: "/images/logos/afeka.png",
   },
 ];
 

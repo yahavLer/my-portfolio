@@ -264,14 +264,43 @@ export default function Page() {
           {experience.map((e) => (
             <Card key={e.period + e.company}>
               <div className="text-sm text-slate-500">{e.period}</div>
-              <div className="font-display mt-2 text-2xl tracking-tight">{e.role}</div>
-              <div className="text-slate-600">{e.company}</div>
+
+              <div className="mt-3 flex items-start justify-between gap-6">
+                <div className="min-w-0">
+                  <div className="font-display text-2xl tracking-tight">{e.role}</div>
+                  <div className="text-slate-600">{e.company}</div>
+                </div>
+
+                {e.logos?.length ? (
+                  <div className="flex shrink-0 items-center gap-3">
+                    {e.logos.map((src: string) => (
+                      <div
+                        key={src}
+                        className="flex h-16 w-28 items-center justify-center overflow-hidden rounded-2xl border border-slate-200 bg-white px-3 shadow-sm"
+                      >
+                        <img
+                          src={src}
+                          alt="logo"
+                          className="h-full w-full object-contain"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                ) : e.logo ? (
+                  <div className="flex shrink-0 h-16 w-28 items-center justify-center overflow-hidden rounded-2xl border border-slate-200 bg-white px-3 shadow-sm">
+                    <img
+                      src={e.logo}
+                      alt={`${e.company} logo`}
+                      className="h-full w-full object-contain"
+                    />
+                  </div>
+                ) : null}
+              </div>
+
 
               <ul className="mt-4 list-disc pl-5 text-slate-600">
                 {e.bullets.map((b) => (
-                  <li key={b} className="mt-1">
-                    {b}
-                  </li>
+                  <li key={b} className="mt-1">{b}</li>
                 ))}
               </ul>
             </Card>
@@ -284,9 +313,26 @@ export default function Page() {
         <div className="space-y-4">
           {education.map((ed: any) => (
             <Card key={ed.school}>
-              <div className="font-display text-2xl tracking-tight">{ed.school}</div>
-              <div className="mt-2 text-slate-700">{ed.degree}</div>
-              <div className="mt-2 text-slate-500">{ed.period} • {ed.extra}</div>
+              <div className="flex items-start justify-between gap-6">
+                <div className="min-w-0">
+                  <div className="font-display text-2xl tracking-tight">{ed.school}</div>
+                  <div className="mt-1 text-slate-700">{ed.degree}</div>
+
+                  <div className="mt-3 text-slate-500">
+                    {ed.period} {ed.extra ? `• ${ed.extra}` : ""}
+                  </div>
+                </div>
+
+                {ed.logo ? (
+                  <div className="flex shrink-0 h-16 w-28 items-center justify-center overflow-hidden rounded-2xl border border-slate-200 bg-white px-3 shadow-sm">
+                    <img
+                      src={ed.logo}
+                      alt={`${ed.school} logo`}
+                      className="h-full w-full object-contain"
+                    />
+                  </div>
+                ) : null}
+              </div>
             </Card>
           ))}
         </div>
