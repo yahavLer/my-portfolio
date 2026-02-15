@@ -113,7 +113,7 @@ export const experience: ExperienceItem[] = [
     period: "2019 – 2021",
     company: "IDF – Tel Hashomer Induction Center",
     role: "Network Administrator & Team Leader",
-    logos: ["/images/logos/idf.png", "/images/logos/meitav.png", "/images/logos/tikshuv.png"],
+    logos: ["/images/logos/idf.png", "/images/logos/Meitav.png", "/images/logos/tikshuv.png"],
     bullets: [
       "Led a team of 10 network administrator soldiers, supporting ~350 users.",
       "Owned user management, permissions, and troubleshooting of network/communication systems.",
