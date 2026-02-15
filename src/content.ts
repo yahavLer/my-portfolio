@@ -33,11 +33,15 @@ export type InterestCard = {
 
 export const profile = {
   name: "Yahav Ler",
-  title: "Software Engineer (B.Sc.) | Java & Android",
+  title: "Software Engineer (B.Sc.) | Mobile & Web | Backend Developer | NOC Representative",
   tagline:
-    "Java developer building Spring Boot microservices and Android apps end-to-end. Strong OOP, design patterns, and multi-threading, with hands-on experience in production monitoring and incident handling.",
+  "Software engineer with a passion for building end-to-end products. Experienced in Java, Spring Boot, RESTful APIs, and SQL, alongside front development at android and web . Proactive problem-solver with a strong foundation in software engineering principles. Passionate about building end-to-end products with clean architecture.",
   tech: [
     "Java",
+    "TypeScript",
+    "Python",
+    "C",
+    "C++",
     "Spring Boot",
     "Microservices",
     "REST APIs",
@@ -47,6 +51,10 @@ export const profile = {
     "MongoDB",
     "Docker",
     "Firebase",
+    "Kibana",
+    "Grafana",
+    "ArgoCD",
+    "OpenShift",
   ],
   links: {
     github: "https://github.com/yahavLer",
@@ -62,7 +70,7 @@ export const profile = {
 };
 
 export const about: string[] = [
-  "B.Sc. Software Engineering graduate (GPA 85), specializing in Mobile Applications.",
+  "B.Sc. Software Engineering graduate, specializing in Mobile Applications.",
   "I love building products end-to-end: Android client + Spring Boot backend + databases, with a focus on clean architecture and maintainable code.",
   "Currently working as a NOC Representative in a defense company, monitoring mission-critical systems and handling real-time incidents while collaborating with engineering and operations teams.",
   "I’m proactive, take ownership, communicate clearly, and enjoy learning fast and improving systems continuously.",
@@ -75,7 +83,7 @@ export const interests: InterestCard[] = [
 ];
 
 export const skills: SkillGroup[] = [
-  { title: "Languages", items: ["Java (primary)", "Python", "C", "C++"] },
+  { title: "Languages", items: ["Java", "Python", "C", "C++", "TypeScript"] },
   { title: "Backend & APIs", items: ["Spring Boot", "RESTful APIs", "Microservices", "Hibernate/JPA"] },
   { title: "Mobile", items: ["Android (Java)", "Android SDK", "Retrofit", "Firebase (Auth/FCM)"] },
   { title: "Databases", items: ["PostgreSQL", "MySQL", "MongoDB", "SQL"] },
@@ -115,7 +123,7 @@ export const education = [
     period: "2021 – 2025",
     school: "Afeka College of Engineering, Tel Aviv",
     degree: "B.Sc. in Software Engineering",
-    extra: "GPA: 85 | Specialization in Mobile Applications",
+    extra: "Specialization in Mobile Applications",
   },
 ];
 
