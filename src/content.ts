@@ -154,6 +154,44 @@ export const projects: Project[] = [
       // אם תוסיפי תמונות לפרויקט quick-match, פשוט תוסיפי כאן images[]
     },
   },
+
+  {
+    name: "Rail Safe Platform – Risk Management System",
+    period: "2025 – 2026",
+    desc: "End-to-end risk & safety management system inspired by real operational needs (initially envisioned for a safety manager at Israel Railways). Built as a separated Frontend + Backend repositories for clean architecture and scalability.",
+    highlights: [
+      "Designed a full risk-management workflow: risks, mitigations/tasks, and operational tracking.",
+      "Implemented clear API boundaries and maintainable structure between UI, services, and data layer.",
+      "Built with scalability in mind (separation of concerns, modular components, and production-ready patterns).",
+    ],
+    stack: [
+      "Java",
+      "Spring Boot",
+      "REST APIs",
+      "Microservices",
+      "SQL",
+      "React",
+      "TypeScript",
+      "Docker",
+      "Git",
+    ],
+    links: [
+      { label: "Backend Repo", href: "https://github.com/yahavLer/rail-safe-platform" },
+      { label: "Frontend Repo", href: "https://github.com/yahavLer/rail-safe-platform-front" },
+    ],
+  },
+  {
+    name: "C++ Restaurant (OOP Project)",
+    period: "2024",
+    desc: "C++ project focused on OOP design: restaurant simulation/management with structured classes and logic.",
+    highlights: [
+      "Implemented OOP principles (encapsulation, inheritance, polymorphism) and clean class design.",
+      "Worked with core C++ constructs, data structures, and robust program flow.",
+    ],
+    stack: ["C++", "OOP", "STL", "Data Structures"],
+    links: [{ label: "GitHub", href: "https://github.com/yahavLer/CPP_resturantPart2-GalYahavDiana" }],
+  },
+
   {
     name: "Benefit Management System (Full-Stack)",
     period: "2024",
