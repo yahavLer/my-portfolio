@@ -13,6 +13,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://yahavler.vercel.app"),
   title: "Yahav Ler | Software Engineer",
   description:
     "Backend Engineer: Java/Spring Boot • REST APIs • PostgreSQL/MongoDB • Docker | Microservices",
@@ -21,12 +22,12 @@ export const metadata: Metadata = {
     description:
       "Backend Engineer: Java/Spring Boot • REST APIs • PostgreSQL/MongoDB • Docker | Microservices",
     url: "https://yahavler.vercel.app/",
-    images: [{ url: "/og.png", width: 1200, height: 630 }],
+    images: [{ url: "/og.png?v=2", width: 1200, height: 630 }],
     type: "website",
   },
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    icon: [{ url: "/favicon.ico?v=2" }],
+    apple: [{ url: "/apple-touch-icon.png?v=2" }],
   },
 };
 
