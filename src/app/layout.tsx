@@ -14,10 +14,12 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Yahav Ler | Software Engineer",
-  description: "Backend Engineer: Java/Spring Boot • REST APIs • PostgreSQL/MongoDB • Docker | Microservices",
+  description:
+    "Backend Engineer: Java/Spring Boot • REST APIs • PostgreSQL/MongoDB • Docker | Microservices",
   openGraph: {
     title: "Yahav Ler | Software Engineer",
-    description: "Backend Engineer: Java/Spring Boot • REST APIs • PostgreSQL/MongoDB • Docker | Microservices",
+    description:
+      "Backend Engineer: Java/Spring Boot • REST APIs • PostgreSQL/MongoDB • Docker | Microservices",
     url: "https://yahavler.vercel.app/",
     images: [{ url: "/og.png", width: 1200, height: 630 }],
     type: "website",
