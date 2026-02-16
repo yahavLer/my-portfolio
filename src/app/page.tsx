@@ -137,7 +137,6 @@ export default function Page() {
                 Software Engineer
               </span>{" "}
               (B.Sc.)
-              <span className="text-slate-500"> &amp; Architecture.</span>
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg md:text-xl text-slate-600 leading-relaxed">
