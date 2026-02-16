@@ -136,11 +136,11 @@ export const projects: Project[] = [
   {
     name: "Dating App (AI/ML + Microservices + Full-Stack)",
     period: "2024 – 2025",
-    desc: "Full-stack mobile dating platform combining MBTI-based personality matching with FaceNet facial similarity, built with Spring Boot microservices and an Android client.",
+    desc: "End-to-end mobile dating app that matches users via personality & lifestyle questionnaires plus FaceNet-based facial similarity, built with Spring Boot microservices and an Android client.",
     highlights: [
-      "Led a team of 4 in an Agile environment and delivered an end-to-end working system.",
-      "Implemented matching flow (MBTI + face similarity score) and real-time chat notifications (FCM).",
-      "Integrated Android client with REST APIs using Retrofit; persisted data in PostgreSQL/MongoDB.",
+      "Technical Lead in a 4-person Agile team across the full SDLC—owned architecture, API contracts, data/DB design, backend & client development, and milestone-driven delivery to a working product.",
+      "Built Spring Boot microservices (RESTful APIs) with PostgreSQL and MongoDB, integrating Firebase for authentication/media and FCM for push notifications.",
+      "Developed the Android client (Java) with Retrofit integration, implementing the end-to-end matching flow and real-time chat notifications."
     ],
     stack: [
       "Android (Java)",
@@ -153,22 +153,24 @@ export const projects: Project[] = [
       "Docker",
       "Python (FaceNet/Flask)",
     ],
-    links: [{ label: "GitHub", href: "https://github.com/yahavLer" }],
+    links: [
+      { label: "GitHub - front", href: "https://github.com/yahavLer/Meeting_Final_Project_Android" },
+      { label: "GitHub - back", href: "https://github.com/yahavLer/serverMatchmakingMicroservices" },
+    ],
     media: {
       video: { src: "/images/projects/quick-match/quick-match-demo.mp4", title: "Quick Match Demo" },
-      // אם תוסיפי תמונות לפרויקט quick-match, פשוט תוסיפי כאן images[]
     },
   },
 
   {
-    name: "Rail Safe Platform – Risk Management System",
-    period: "2025 – 2026",
-    desc: "End-to-end risk & safety management system inspired by real operational needs (initially envisioned for a safety manager at Israel Railways). Built as a separated Frontend + Backend repositories for clean architecture and scalability.",
-    highlights: [
-      "Designed a full risk-management workflow: risks, mitigations/tasks, and operational tracking.",
-      "Implemented clear API boundaries and maintainable structure between UI, services, and data layer.",
-      "Built with scalability in mind (separation of concerns, modular components, and production-ready patterns).",
-    ],
+  name: "Rail Safe Platform – Safety & Risk Tracking System",
+  period: "2025 – 2026",
+  desc: "Web platform for operational safety tracking — from reporting and prioritizing risks/incidents to assigning follow-up tasks and monitoring progress. Built as two separate repositories: a React + TypeScript frontend consuming Spring Boot microservice REST APIs for a clean, scalable architecture.",
+  highlights: [
+    "Built a React + TypeScript dashboard (Vite, React Router) with a clear separation between UI pages/components and a dedicated API/service layer.",
+    "Connected the React (TypeScript) frontend to multiple Spring Boot services via REST APIs using Axios, with shared typed models and fast data fetching using React Query.",
+    "Packaged the backend with Docker Compose, running PostgreSQL and the Spring Boot services together for easy local setup and deployment."
+  ],
     stack: [
       "Java",
       "Spring Boot",
@@ -202,12 +204,16 @@ export const projects: Project[] = [
     period: "2024",
     desc: "Benefit tracking platform with an authenticated Spring Boot REST backend and an Android client integrated via Retrofit.",
     highlights: [
+      "Agile/Scrum experience: worked in sprint-based development (planning, iterative delivery, reviews/retros).",
       "Built REST backend with authentication and benefit-tracking flows.",
       "Developed Android client consuming APIs with Retrofit.",
       "Packaged for consistent runs using Docker; used H2 for persistence during development.",
     ],
     stack: ["Java", "Spring Boot", "REST APIs", "Android (Java)", "Retrofit", "H2", "Docker"],
-    links: [{ label: "GitHub", href: "https://github.com/yahavLer" }],
+    links: [
+      { label: "GitHub - front", href: "https://github.com/yahavLer/integrativeClientSide_findYourBenefit" },
+      { label: "GitHub - back", href: "https://github.com/yahavLer/integrativeServerSide_findYourBenefit" },
+    ],
   },
   {
     name: "Benefit Finder – Android App",
@@ -218,7 +224,7 @@ export const projects: Project[] = [
       "Built a scalable structure for adding new benefit sources and categories.",
     ],
     stack: ["Android SDK", "Java"],
-    links: [{ label: "GitHub", href: "https://github.com/yahavLer" }],
+    links: [{ label: "GitHub", href: "https://github.com/yahavLer/AndroidApp_BenefitFinder" }],
     media: {
       images: [
         { src: "/images/projects/benefit-finder/1.png", alt: "Benefit Finder - screen 1" },
@@ -228,8 +234,4 @@ export const projects: Project[] = [
       ],
     },
   },
-];
-
-export const additional = [
-  "Additional academic projects in C, C++, Java, and SQL focusing on OOP, data structures, and file-based persistence.",
 ];
