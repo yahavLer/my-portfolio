@@ -167,9 +167,9 @@ export const projects: Project[] = [
   period: "2025 – 2026",
   desc: "Web platform for operational safety tracking — from reporting and prioritizing risks/incidents to assigning follow-up tasks and monitoring progress. Built as two separate repositories: a React + TypeScript frontend consuming Spring Boot microservice REST APIs for a clean, scalable architecture.",
   highlights: [
-    "Built a React + TypeScript dashboard (Vite, React Router) with a clear separation between UI pages/components and a dedicated API/service layer.",
-    "Connected the React (TypeScript) frontend to multiple Spring Boot services via REST APIs using Axios, with shared typed models and fast data fetching using React Query.",
-    "Packaged the backend with Docker Compose, running PostgreSQL and the Spring Boot services together for easy local setup and deployment."
+    "Built a React dashboard integrated with Spring Boot services via typed REST APIs, ensuring a clean separation of concerns and maintainable codebase.",
+    "Worked in a Docker Compose multi-service environment for consistent local development.",
+    "Built an AI-assisted image analysis flow using Base44, Express, and Spring Boot to extract insights from incident photos and enhance reporting accuracy.",
   ],
     stack: [
       "Java",
