@@ -163,7 +163,7 @@ export const projects: Project[] = [
   },
 
   {
-  name: "Rail Safe Platform – Safety & Risk Tracking System",
+  name: "Safe Box Platform – Safety & Risk Tracking System",
   period: "2025 – 2026",
   desc: "Web platform for operational safety tracking — from reporting and prioritizing risks/incidents to assigning follow-up tasks and monitoring progress. Built as two separate repositories: a React + TypeScript frontend consuming Spring Boot microservice REST APIs for a clean, scalable architecture.",
   highlights: [
@@ -186,6 +186,9 @@ export const projects: Project[] = [
       { label: "Backend Repo", href: "https://github.com/yahavLer/rail-safe-platform" },
       { label: "Frontend Repo", href: "https://github.com/yahavLer/rail-safe-platform-front" },
     ],
+    media: {
+      video: { src: "/images/projects/safe-box/safe-box.mp4", title: "Safe Box Demo" },
+    },
   },
   {
     name: "C++ Restaurant (OOP Project)",
