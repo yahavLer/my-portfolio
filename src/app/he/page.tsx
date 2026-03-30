@@ -8,13 +8,13 @@ import {
   projects,
   skills,
   buildInPractice,
-} from "@/content";
+} from "@/content_he";
 
 export default function Page() {
   return (
     <PortfolioPage
       content={{ profile, about, buildInPractice, education, experience, interests, projects, skills }}
-      isHebrew={false}
+      isHebrew={true}
     />
   );
 }
