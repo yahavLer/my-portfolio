@@ -199,7 +199,7 @@ export const education: EducationItem[] = [
 
 export const projects: Project[] = [
   {
-    name: "Rail Safe Platform – Risk & Safety Management System",
+    name: "SafeBox – Risk & Safety Management System (web platform, Microservice backend + React frontend)",
     period: "2025 – 2026",
     desc: "Backend-driven web platform for managing operational risks, mitigation workflows, and safety-related processes. Built as a multi-service Spring Boot system with a separate React frontend.",
     highlights: [
@@ -227,7 +227,7 @@ export const projects: Project[] = [
     },
   },
   {
-    name: "Personality Match – Microservices-Based Matching Platform",
+    name: "QuickMaatch - Dating Application (Microservices backend + Android client)",
     period: "2024 – 2025",
     desc: "A matchmaking platform combining questionnaires, personality matching, and AI-related components, built with Spring Boot microservices, SQL/NoSQL databases, Firebase integrations, and an Android client.",
     highlights: [
@@ -257,7 +257,7 @@ export const projects: Project[] = [
     },
   },
   {
-    name: "Benefit Management System",
+    name: "Benefit Management System (Spring Boot REST backend + Android client)",
     period: "2024",
     desc: "Benefit tracking platform with an authenticated Spring Boot REST backend and an Android client integrated via Retrofit.",
     highlights: [
@@ -272,7 +272,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    name: "Benefit Finder – Android App",
+    name: "Benefit Finder (Android application)",
     period: "2024",
     desc: "Android app that aggregates credit card and loyalty-club benefits, compares offers, and recommends the best savings per purchase.",
     highlights: [
@@ -291,7 +291,7 @@ export const projects: Project[] = [
     },
   },
   {
-    name: "C++ Restaurant (OOP Project)",
+    name: "Restaurant Simulation (C++ console application)",
     period: "2024",
     desc: "C++ project focused on object-oriented design, restaurant simulation, and structured class-based logic.",
     highlights: [

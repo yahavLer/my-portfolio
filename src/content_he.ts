@@ -173,7 +173,7 @@ export const education: EducationItem[] = [
 
 export const projects: Project[] = [
   {
-    name: "Rail Safe Platform – מערכת לניהול סיכונים ובטיחות",
+    name: "Safe box – מערכת ניהול סיכונים ובטיחות (web platform, Microservice backend + React frontend)",
     period: "2025 – 2026",
     desc: "מערכת web לניהול סיכונים ובטיחות, עם דגש חזק על backend: יצירת סיכונים, מעקב אחר משימות מיטיגציה ותמיכה בתהליכי עבודה תפעוליים. המערכת בנויה על כמה שירותי Spring Boot עם frontend נפרד ב-React.",
     highlights: [
@@ -201,7 +201,7 @@ export const projects: Project[] = [
     },
   },
   {
-    name: "Personality Match – פלטפורמת התאמה מבוססת Microservices",
+    name: "QuickMaatch - אפליקציית היכרויות (Microservices backend + Android client)",
     period: "2024 – 2025",
     desc: "פלטפורמת התאמה שמבוססת על שאלונים, התאמה אישיותית ורכיבי AI, עם Spring Boot microservices, מסדי נתונים SQL/NoSQL, אינטגרציות Firebase ואפליקציית Android.",
     highlights: [
@@ -231,7 +231,7 @@ export const projects: Project[] = [
     },
   },
   {
-    name: "Benefit Management System",
+    name: "מערכת ניהול הטבות (Spring Boot REST backend + Android client)",
     period: "2024",
     desc: "מערכת לניהול הטבות עם צד שרת מאומת ב-Spring Boot וצד לקוח ב-Android, שמתחבר דרך Retrofit.",
     highlights: [
@@ -246,7 +246,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    name: "Benefit Finder – אפליקציית Android",
+    name: "Benefit Finder (Android application)",
     period: "2024",
     desc: "אפליקציית Android שמרכזת הטבות של כרטיסי אשראי ומועדוני לקוחות, משווה בין מבצעים ומראה מה הכי משתלם בכל רכישה.",
     highlights: [
@@ -265,7 +265,7 @@ export const projects: Project[] = [
     },
   },
   {
-    name: "C++ Restaurant (פרויקט OOP)",
+    name: "ניהול מסעדה (C++ console application)",
     period: "2024",
     desc: "פרויקט ב-C++ עם דגש על תכנון מונחה עצמים, סימולציית מסעדה ולוגיקה מבוססת מחלקות.",
     highlights: [

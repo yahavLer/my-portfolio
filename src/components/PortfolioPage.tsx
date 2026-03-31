@@ -46,7 +46,7 @@ function Section({
             <div className="hidden h-px w-40 bg-gradient-to-r from-rose-300 via-violet-300 to-transparent md:block" />
             <div className="text-right">
               <div className="text-xs tracking-[0.25em] text-slate-500">
-                {number} // {title.toUpperCase()}
+                {number} // {title}
               </div>
               <h2 className="font-display mt-3 text-3xl leading-tight md:text-4xl">
                 {title}
@@ -244,6 +244,54 @@ export default function PortfolioPage({
     skills,
   } = content;
 
+  const labels = isHebrew
+    ? {
+        contact: "יצירת קשר",
+        navPractice: "01. מה אני בונה בפועל",
+        navProjects: "02. פרויקטים",
+        navSkills: "03. יכולות",
+        navExperience: "04. ניסיון",
+        navEducation: "05. השכלה",
+        navAbout: "06. עליי",
+        practiceTitle: "מה אני בונה בפועל",
+        practiceSubtitle: "התחומים שאני עובדת איתם ביום־יום",
+        projectsTitle: "פרויקטים",
+        projectsSubtitle: "עבודות נבחרות",
+        skillsTitle: "יכולות",
+        skillsSubtitle: "הכלים שאני עובדת איתם",
+        experienceTitle: "ניסיון",
+        experienceSubtitle: "Production + Leadership",
+        educationTitle: "השכלה",
+        educationSubtitle: "רקע אקדמי",
+        aboutTitle: "עליי",
+        aboutSubtitle: "מעבר לקוד",
+        footer: "מהנדסת תוכנה // 2026",
+        email: "אימייל",
+      }
+    : {
+        contact: "Contact",
+        navPractice: "01. Practice",
+        navProjects: "02. Projects",
+        navSkills: "03. Skills",
+        navExperience: "04. Experience",
+        navEducation: "05. Education",
+        navAbout: "06. About",
+        practiceTitle: "What I Build in Practice",
+        practiceSubtitle: "Core areas I work with",
+        projectsTitle: "Projects",
+        projectsSubtitle: "Selected Works",
+        skillsTitle: "Skills",
+        skillsSubtitle: "My Toolbox",
+        experienceTitle: "Experience",
+        experienceSubtitle: "Production + Leadership",
+        educationTitle: "Education",
+        educationSubtitle: "Academia",
+        aboutTitle: "About",
+        aboutSubtitle: "Beyond the Terminal",
+        footer: "SOFTWARE ENGINEER // 2026",
+        email: "Email",
+      };
+
   return (
     <main className="mx-auto max-w-6xl px-5">
       <header className="sticky top-0 z-10 -mx-5 border-b border-slate-200 bg-white/70 px-5 backdrop-blur">
@@ -260,17 +308,17 @@ export default function PortfolioPage({
               href={profile.links.email}
               className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-700 shadow-sm transition hover:shadow"
             >
-              Contact
+              {labels.contact}
             </a>
           </div>
 
           <div className="hidden items-center gap-5 md:flex">
-            <NavLink href="#practice">01. Practice</NavLink>
-            <NavLink href="#projects">02. Projects</NavLink>
-            <NavLink href="#skills">03. Skills</NavLink>
-            <NavLink href="#experience">04. Experience</NavLink>
-            <NavLink href="#education">05. Education</NavLink>
-            <NavLink href="#about">06. About</NavLink>
+            <NavLink href="#practice">{labels.navPractice}</NavLink>
+            <NavLink href="#projects">{labels.navProjects}</NavLink>
+            <NavLink href="#skills">{labels.navSkills}</NavLink>
+            <NavLink href="#experience">{labels.navExperience}</NavLink>
+            <NavLink href="#education">{labels.navEducation}</NavLink>
+            <NavLink href="#about">{labels.navAbout}</NavLink>
           </div>
 
           <div dir={isHebrew ? "rtl" : "ltr"} className="font-display text-lg tracking-tight">
@@ -340,7 +388,7 @@ export default function PortfolioPage({
                   className="text-slate-700 underline hover:text-slate-900"
                   href={profile.links.email}
                 >
-                  Email
+                  {labels.email}
                 </a>
               </div>
             </div>
@@ -389,7 +437,7 @@ export default function PortfolioPage({
                   className="text-slate-700 underline hover:text-slate-900"
                   href={profile.links.email}
                 >
-                  Email
+                  {labels.email}
                 </a>
               </div>
             </div>
@@ -413,8 +461,8 @@ export default function PortfolioPage({
       <Section
         id="practice"
         number="01"
-        title="What I Build in Practice"
-        subtitle="Core areas I work with"
+        title={labels.practiceTitle}
+        subtitle={labels.practiceSubtitle}
         alignRight={isHebrew}
       >
         <Card>
@@ -441,8 +489,8 @@ export default function PortfolioPage({
       <Section
         id="projects"
         number="02"
-        title="Projects"
-        subtitle="Selected Works"
+        title={labels.projectsTitle}
+        subtitle={labels.projectsSubtitle}
         alignRight={isHebrew}
       >
         <div className="space-y-6">
@@ -455,8 +503,8 @@ export default function PortfolioPage({
       <Section
         id="skills"
         number="03"
-        title="Skills"
-        subtitle="My Toolbox"
+        title={labels.skillsTitle}
+        subtitle={labels.skillsSubtitle}
         alignRight={isHebrew}
       >
         <div className="grid gap-4 md:grid-cols-2">
@@ -478,8 +526,8 @@ export default function PortfolioPage({
       <Section
         id="experience"
         number="04"
-        title="Experience"
-        subtitle="Production + Leadership"
+        title={labels.experienceTitle}
+        subtitle={labels.experienceSubtitle}
         alignRight={isHebrew}
       >
         <div className="space-y-4">
@@ -558,8 +606,8 @@ export default function PortfolioPage({
       <Section
         id="education"
         number="05"
-        title="Education"
-        subtitle="Academia"
+        title={labels.educationTitle}
+        subtitle={labels.educationSubtitle}
         alignRight={isHebrew}
       >
         <div className="space-y-4">
@@ -622,8 +670,8 @@ export default function PortfolioPage({
       <Section
         id="about"
         number="06"
-        title="About"
-        subtitle="Beyond the Terminal"
+        title={labels.aboutTitle}
+        subtitle={labels.aboutSubtitle}
         alignRight={isHebrew}
       >
         <Card>
@@ -662,7 +710,7 @@ export default function PortfolioPage({
       </Section>
 
       <footer className={`py-10 text-sm text-slate-500 ${isHebrew ? "text-right" : ""}`}>
-        {profile.name} — SOFTWARE ENGINEER // 2026
+        {profile.name} — {labels.footer}
       </footer>
     </main>
   );
