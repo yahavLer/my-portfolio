@@ -169,6 +169,7 @@ export const experience: ExperienceItem[] = [
     bullets: [
       "Monitor mission-critical production systems and investigate real-time incidents in a high-availability environment.",
       "Analyze logs, alerts, and system behavior using observability tools such as Elastic, Kibana, and Grafana.",
+      "Write and execute complex SQL queries to extract data",
       "Work with production platforms and distributed environments — including ArgoCD, OpenShift, Kafka, YARN, message-queue systems, and Linux-based systems — from an operational monitoring and troubleshooting perspective.",
       "Collaborate with engineering and operations teams to identify issues, trace failures, and improve system stability.",
       "Designed and implemented automation for recurring operational alerts, improving consistency and reducing manual work.",
@@ -227,7 +228,7 @@ export const projects: Project[] = [
     },
   },
   {
-    name: "QuickMaatch - Dating Application (Microservices backend + Android client)",
+    name: "QuickMatch - Dating Application (Microservices backend + Android client)",
     period: "2024 – 2025",
     desc: "A matchmaking platform combining questionnaires, personality matching, and AI-related components, built with Spring Boot microservices, SQL/NoSQL databases, Firebase integrations, and an Android client.",
     highlights: [

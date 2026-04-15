@@ -201,7 +201,7 @@ export const projects: Project[] = [
     },
   },
   {
-    name: "QuickMaatch - אפליקציית היכרויות (Microservices backend + Android client)",
+    name: "QuickMatch - אפליקציית היכרויות (Microservices backend + Android client)",
     period: "2024 – 2025",
     desc: "פלטפורמת התאמה שמבוססת על שאלונים, התאמה אישיותית ורכיבי AI, עם Spring Boot microservices, מסדי נתונים SQL/NoSQL, אינטגרציות Firebase ואפליקציית Android.",
     highlights: [
