@@ -74,7 +74,7 @@ export const profile = {
   title: "Software Engineer | Backend & Full-Stack Developer",
   heroTitle: "Software Engineer",
   tagline:
-    "Software Engineering graduate with hands-on experience building backend services, REST APIs, SQL data models, and full-stack systems using Java Spring Boot, PostgreSQL, React, and Docker. Currently working in a production-focused NOC role, troubleshooting real-time incidents and collaborating with engineering and operations teams on mission-critical systems.",
+    "Software Engineer with hands-on experience building backend services, REST APIs, SQL data models, and full-stack systems using Java Spring Boot, PostgreSQL, React, and Docker. Currently working in a production-focused NOC role, troubleshooting real-time incidents and collaborating with engineering and operations teams on mission-critical systems.",
   tech: [
     "Java",
     "Spring Boot",
@@ -104,7 +104,7 @@ export const profile = {
 };
 
 export const about: string[] = [
-  "I’m a software engineering graduate with hands-on experience building backend services, APIs, and full-stack applications.",
+  "I’m a software engineer graduate with hands-on experience building backend services, APIs, and full-stack applications.",
   "I enjoy turning requirements into working systems — from database design and backend logic to integrations and user-facing flows.",
   "My current production-focused NOC role strengthened my troubleshooting, monitoring, and system-level thinking",
   "I’m now looking to bring that practical experience into a software engineering or backend development role."
